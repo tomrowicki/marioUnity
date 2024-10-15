@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9175029806638304088}
   m_Layer: 0
   m_Name: Mario
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2ed2ed7b188044d8af8bf388b6ba8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 8
 --- !u!1 &1696039434233424577
 GameObject:
   m_ObjectHideFlags: 0

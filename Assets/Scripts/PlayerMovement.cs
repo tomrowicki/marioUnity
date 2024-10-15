@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private Camera camera;
+    private new Rigidbody2D rigidbody;
+
     private Vector2 velocity;
     private float inputAxis;
-
-    private new Rigidbody2D rigidbody;
 
     public float moveSpeed = 8f;
 
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // obtains component attached to the object
         rigidbody = GetComponent<Rigidbody2D>();
+        camera = Camera.main;
     }
 
     private void Update()
@@ -30,7 +32,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate() 
     {
         Vector2 position = rigidbody.position;
-        position += velocity * Time.fixedDeltaTime;        
+        position += velocity * Time.fixedDeltaTime;
+
+        Vector2 leftEdge = camera.ScreenToWorldPoint(Vector2.zero);
+        Vector2 rightEdge = camera.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        position.x = Mathf.Clamp(position.x, leftEdge.x - 1.5f, rightEdge.x - 0.5f); // position.x has to find itself between the other two values
 
         rigidbody.MovePosition(position);
     }
