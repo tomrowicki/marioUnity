@@ -1771,15 +1771,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mario
       objectReference: {fileID: 0}
+    - target: {fileID: 1467430854720169926, guid: 056c4042c3b62c34b84961c9e7152573,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2136717879912764615, guid: 056c4042c3b62c34b84961c9e7152573,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.61
+      value: -20.57
       objectReference: {fileID: 0}
     - target: {fileID: 2136717879912764615, guid: 056c4042c3b62c34b84961c9e7152573,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.95
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 2136717879912764615, guid: 056c4042c3b62c34b84961c9e7152573,
         type: 3}
@@ -1820,6 +1825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234374970088280754, guid: 056c4042c3b62c34b84961c9e7152573,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 2.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
